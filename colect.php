@@ -12,9 +12,9 @@ if (isset($_POST["name"]) && isset($_POST["data_nasc"])  && isset($_FILES["fotog
     $senha = $_POST["senha"];
     echo "<h1>Dados pessoais</h1>
     				<p>Nome: $name</p>
-    				<p>Nome: $data_nasc</p>
-    				<p>Nome: $email</p>
-    				<p>Nome: $senha</p>";  
+    				<p>Data de nascimento: $data_nasc</p>
+    				<p>Email: $email</p>
+    				<p>Senha: $senha</p>";  
 
 	echo '<div class="alert alert-success" role="alert" align="center"> 
 	<img src="./imagens/' . $new_name . '" class="img img-responsive img-thumbnail" width="200"> <br>
@@ -30,7 +30,7 @@ if (isset($_POST["genero"]) && isset($_POST["term_cond"])) {
     
     echo 	"<h1>Outros dados:</h1>
     				<p>Género: $genero</p>
-    				<p>Nome: $term_cond</p>";
+    				<p>Termos e condições: $term_cond</p>";
    
 }else {
 	$_SESSION["error"] = "Atenção:Campos em branco";
